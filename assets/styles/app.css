@@ -1,3 +1,88 @@
-body {
-    background-color: skyblue;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--light);
+}
+
+/* Général */
+
+/* Définition des variables */
+
+:root{
+    /* Couleurs */
+    --main-color: #3066BE;
+    --main-color-dark: #113773;
+    --validation-color: #60D394;
+    --error-color: #AF3E4D;
+    --light: #F8F7FF;
+    --dark: #01161E;
+    /* Couleurs */
+
+    /* fonts */
+
+    --title-font: "Montserrat", sans-serif;
+    --title-weight: 700;
+    --title-desktop-size: 3rem;
+    --title-tablet-size: 2rem;
+    --title-mobile-size: 1.6rem;
+
+    --subtitle-font: "Anton", sans-serif;
+    --subtitle-weight: 400;
+    --subtitle-desktop-size: 2rem;
+    --subtitle-tablet-size: 1.6rem;
+    --subtitle-mobile-size: 5rem;
+
+    --text-font: "Montserrat", sans-serif;
+    --text-weight: 400;
+    --text-desktop-size: 1.6rem;
+    --text-tablet-size: 1rem;
+    --text-mobile-size: 0.8rem;
+
+
+    /* fonts */
+}
+
+/* Définition des variables */
+
+/* Header */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.header--logo{
+    display: block;
+    width: 40%;
+    text-decoration: none;
+}
+
+.header--logo--img{
+    width: 10rem;
+    margin-left: 2rem;
+}
+
+.header--logo--website_name{
+    color: var(--dark);
+    font-size: var(--subtitle-mobile-size);
+    font-family: var(--subtitle-font);
+    font-weight: var(--subtitle-weight);
+}
+
+/* Header */
+
