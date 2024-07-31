@@ -1,0 +1,108 @@
+header{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.header--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(90% + 3rem); /* +3rem cause the links have a padding-right of 3rem, so to compense and have the thing centered, we make the thing 3rem larger */
+    margin-left: 5%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header--logo{ /* THe container that contains the logo */
+    width: 7.5%;
+}
+
+.header--logo img{
+    width: 100%;
+}
+
+.header--links nav{
+    position: relative;
+}
+
+.header--links a{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    padding-right: 3rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+
+.header--links nav .underline {
+    position: absolute;
+    bottom: -0.2rem;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: left 0.3s ease, width 0.3s ease;
+}
+
+.header--burger{
+    width: 15%;
+    aspect-ratio: 1.2/1;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    margin-right: 3rem;
+}
+
+.burger--bar{
+    background-color: var(--black-color);
+    width: 100%;
+    height: 15%;
+    border-radius: 1rem;
+}
+
+.header--inside_burger{
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 50%;
+    right: -50%;
+    top: calc(4rem + 15dvw);
+    height: calc(100dvh - (4rem + 15dvw)); /* So it's 100% the height minus the header's height */
+    transition: right 0.3s ease;
+    display: none;
+    
+}
+
+.header--inside_burger nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header--inside_burger a{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    padding-right: 3rem;
+    font-size: 3.2rem;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .header--links{
+        display: none;
+    }
+
+    .header--burger, .header--inside_burger{
+        display: flex;
+    }
+
+    .header--logo{
+        width: 15%;
+    }
+
+    .header--inside_burger.visible{
+        right: 0!important;
+    }
+}
