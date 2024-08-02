@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 2000px!important;
 }
 
 html{
@@ -34,6 +35,12 @@ html{
 
 body {
     background-color: var(--white-color);
+}
+
+@media screen and (min-width: 2000px) {
+    body{
+        width: 2000px; /* If the screen is larger than 2000px (which is rare) we just stop the body from being bigger, so there will be worders on the side */
+    }
 }
 
 

@@ -1,0 +1,12 @@
+.home{
+    display: flex;
+    flex-direction: row;
+}
+
+.home--infos{
+    width: 50%;
+}
+
+.home--skills{
+    width: 50%;
+}

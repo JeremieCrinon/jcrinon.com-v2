@@ -96,6 +96,7 @@ function Header({ routes }){
                     <Link
                     key={index}
                     to={route.path}
+                    className={location.pathname === route.path ? 'active' : ''}
                     >
                         {t(`header.${route.name}`)}
                     </Link>

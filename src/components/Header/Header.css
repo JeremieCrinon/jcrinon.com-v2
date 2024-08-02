@@ -82,11 +82,24 @@ header{
 .header--inside_burger a{
     color: var(--black-color);
     font-family: var(--main-font);
-    padding-right: 3rem;
+    /* padding-right: 3rem; */
     font-size: 3.2rem;
     text-decoration: none;
     text-align: center;
     padding-top: 3rem;
+    position: relative;
+}
+
+.header--inside_burger .active::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background-color: var(--main-color);
+    z-index: 10;
+    left: 10%;
 }
 
 @media screen and (max-width: 600px) {
