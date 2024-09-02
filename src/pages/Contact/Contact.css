@@ -1,0 +1,25 @@
+.contact {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact p {
+    font-family: var(--main-font);
+    color: var(--black-color);
+    text-align: center;
+    font-weight: var(--main-font-regular-weight);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        width: 80%;
+    }
+}

@@ -1,19 +1,29 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css'
-import routes from './routes';
+import React, { useState } from 'react';
+import './App.css';
+
 import Header from './components/Header/Header';
 
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
+
 function App() {
+
+  const [error500, setError500] = useState(null);
+
   return (
-    <Router>
-      <Header routes={routes}/>
-      <Routes>
-        {routes.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element} />
-        ))}
-      </Routes>
-    </Router>
+    <>
+    {error500 ? (
+      <Header />
+    ) : (
+      <>
+        <Header />
+        <Home />
+        <Portfolio setError500={setError500} />
+        <Contact />
+      </>
+    )}
+    </>
   );
 }
 

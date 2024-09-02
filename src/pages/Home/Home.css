@@ -1,12 +1,95 @@
 .home{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .home--infos{
-    width: 50%;
+    width: 45%;
 }
 
 .home--skills{
-    width: 50%;
+    width: 45%;
+}
+
+.home--skills--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.home--title{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-bold-weight);
+    font-size: 3.2rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+
+.home--text{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-regular-weight);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+
+.home--portfolio, .home--contact{
+    display: block;
+    width: 15rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background-color: var(--main-color-dark);
+    text-align: center;
+    border-radius: 10px;
+    line-height: 3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 10%;
+    position: relative;
+    z-index: 2;
+    font-family: var(--main-font);
+}
+
+.home--portfolio:hover, .home--contact:hover{
+    background-color: var(--main-color);
+}
+
+.home--skills--title{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-bold-weight);
+    font-size: 3.2rem;
+    margin-top: 2rem;
+}
+
+.home--skills p{
+    color: var(--black-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-regular-weight);
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .home{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .home--infos{
+        width: 90%!important;
+    }
+
+    .home--title, .home--text, .home--portfolio, .home--contact, .home--skills--title{
+        margin-left: 5%;
+    }
+    
+    .home--skills{
+        width: 100%;
+    }
 }

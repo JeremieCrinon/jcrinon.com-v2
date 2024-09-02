@@ -3,13 +3,24 @@
       "home": "Accueil",
       "about": "À propos",
       "portfolio": "Portfolio",
-      "contact": "Contact"
+      "contact": "Contact",
+      "language": "en"
     },
 
     "home": {
       "text": "Actuellement en formation professionnelle DWWM (Développeur Web et Web Mobile) jusqu'au 4 octobre 2024, l'apprentissage et la mise en pratique en entreprise sont terminés, il reste la préparation et le passage du titre.",
       "poo": "Programmation orienté objet",
-      "mvc": "Modèle vue contrôleur"
+      "mvc": "Modèle vue contrôleur",
+      "skills": "Compétences"
+    },
+
+    "portfolio": {
+      "project_link": "Page du projet"
+    },
+
+    "contact": {
+      "text1": "Si vous voulez me contacter, vous pouvez m'envoyer un e-mail à cette adresse : ",
+      "text2": " je répondrais le plus vite possible."
     }
   }
   
